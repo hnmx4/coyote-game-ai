@@ -64,6 +64,7 @@ export const Coyote = Game({
   },
 
   flow: {
+    movesPerTurn: 1,
     endGameIf: (G, ctx) => {
       if (G.coyoteTargetPlayer !== undefined){
         return G.count > aggregate(G) ? G.coyoteTargetPlayer : G.lastPlayer;
