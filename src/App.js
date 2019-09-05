@@ -5,6 +5,7 @@ import { CoyoteBoard } from './board';
 
 const App = Client({
   game: Coyote,
+  numPlayers: 4,
   board: CoyoteBoard,
   ai: CoyoteAI
 });
